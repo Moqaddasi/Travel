@@ -1,0 +1,29 @@
+/*
+light: #00fa9a
+medium  #3cb371
+dark 3: #308355
+*/
+@import "abstract/variablles";
+@import "abstract/mixins";
+@import "abstract/functions";
+
+@import "base/base";
+@import "base/typography";
+@import "base/utlities";
+@import "base/animations";
+
+@import "pages/home";
+
+
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/navigation";
+
+@import "component/buttons";
+@import "component/composition";
+@import "component/feature-box";
+@import "component/card";
+@import "component/story";
+@import "component/bg-video";
+@import "component/form";
