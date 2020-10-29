@@ -5,3 +5,31 @@
         clear: both;
     }
 }
+@mixin abscenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+@mixin respond-phone {
+    @media (max-width:600px){@content};
+}
+
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width:37.5em){@content};     //600
+    }
+    @if $breakpoint == tab-port {
+        @media (max-width:56.25em){@content};   //800
+    }
+    @if $breakpoint == tab-land {
+        @media (max-width:75em){@content};   //1200
+    }
+    @if $breakpoint == big-desktop {
+        @media (min-width:112.5){@content};   //1800
+    }
+    
+}
