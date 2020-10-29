@@ -8,21 +8,40 @@
          position: absolute;
          z-index: 10;
          transition: all .4s;
-         outline-offset: 2rem;;
+         outline-offset: 2rem;
+
+         @include respond (tab-port){
+             float: left;
+             position: relative;
+             width: 33.333333%;
+             box-shadow:0 1.5rem 3rem rgba($color-black ,.2);
+         }
 
          &__p1{
              left: 0;
              top: -2rem;
+             @include respond(tab-port){
+                 top: 0;
+             }
          }
          
          &__p2{
             right:0;
             top: 20srem;
+            @include respond (tab-port){
+                top: 0;
+                transform: scale(1.5);
+                z-index: 9999;
+            }
         }
         
         &__p3{
             left: 20%;
             top: 10rem;
+            @include respond (tab-port){
+                top: 0;
+                left: 0;
+            }
         }
 
         &:hover{

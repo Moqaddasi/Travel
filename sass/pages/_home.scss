@@ -2,6 +2,9 @@
     background-color: $color-gray-light-1;
     padding: 25rem 0;
     margin-top: -20vh;
+    @include respond (tab-port){
+        padding: 30rem 0rem;
+    }
 }
 .section-features{
     padding: 20rem 0;
@@ -16,6 +19,9 @@
     & > *{
         transform:skewY(7deg);
         
+    }
+    @include respond (tab-port){
+        padding: 10rem 0;
     }
 }
 .section-tour{
