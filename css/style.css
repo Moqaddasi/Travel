@@ -318,7 +318,7 @@ body {
   @media (max-width: 56.25em) {
     .navigation__background {
       top: 7rem;
-      right: 12rem; } }
+      right: 12.5rem; } }
 
 .navigation__nav {
   height: 100vh;
